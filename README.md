@@ -13,13 +13,13 @@ flowchart LR
     ppl[individual] -->|memberOf| o[organisation]
     ppl -->|authorOf| d
     o -->|partnerAs| r
+    p -->|partOf| g[grant]
     p[project] -->|produce| d[data & knowledge resource]
     obs[observation] -->|on| d
     o -->|publish| d
     d -->|describedIn| c[catalogue]
     d -->|link| d
     r[role] -->|in| p
-    p -->|partOf| g[grant]
     g -->|funding| fs[Fundingscheme]
 ```
 
