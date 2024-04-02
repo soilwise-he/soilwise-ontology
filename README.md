@@ -1,5 +1,12 @@
 # soilwise-ontology
-the soilwise ontology is a model for a knowledge graph including datasets, organisations and catalogues
+
+The soilwise ontology is a model for a knowledge graph including datasets, organisations and catalogues.
+
+It aims to capture on both data and knowledge resources:
+
+- in which context (project/funding) the resource has been created
+- in which catalogue(s) it is described
+- any observations (validation, usage, user feedback) on the resource during its lifetime
 
 ``` mermaid
 flowchart LR
@@ -7,6 +14,7 @@ flowchart LR
     ppl -->|authorOf| d
     o -->|partnerAs| r
     p[project] -->|produce| d[data & knowledge resource]
+    obs[observation] -->|on| d
     o -->|publish| d
     d -->|describedIn| c[catalogue]
     d -->|link| d
