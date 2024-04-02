@@ -3,14 +3,16 @@ the soilwise ontology is a model for a knowledge graph including datasets, organ
 
 ``` mermaid
 flowchart LR
-    ppl[individual] -->|memberOf| o[organisations]
+    ppl[individual] -->|memberOf| o[organisation]
     ppl -->|authorOf| d
-    o -->|partnerIn| p[projects]
-    p -->|produce| d[data & knowledge resources]
+    o -->|partnerAs| r
+    p[project] -->|produce| d[data & knowledge resource]
     o -->|publish| d
-    d -->|describedIn| c[catalogues]
-    d -->|link| d 
-    p -->|part-of| fs[Fundingscheme]
+    d -->|describedIn| c[catalogue]
+    d -->|link| d
+    r[role] -->|in| p
+    p -->|partOf| g[grant]
+    g -->|funding| fs[Fundingscheme]
 ```
 
 ## DCAT
