@@ -1,4 +1,12 @@
-## Soil & land observations
+---
+title: 'Soil & land observations'
+date: 2024-06-27
+authors:
+  - Paul van Genuchten
+  - Luis de Sousa
+---
+
+# Soil & land observations
 
 The observation, measurements & samples model of OGC offers a flexible approach to model soil and land observation data, both from the field as from the lab. The soil biology and genomic commonities play a special role, because they largely adopted standards from their domain.
 

@@ -1,3 +1,11 @@
+---
+title: 'Terminology'
+date: 2024-06-27
+authors:
+  - Paul van Genuchten
+  - Luis de Sousa
+---
+
 ## Terminology
 
 Harmonising terminology within or between communities is a typical first aspect in cooperation. The SKOS vocabulairy is a common mechanism to advertise (and link between) terminologies.  
