@@ -37,4 +37,12 @@ Harmonising terminology within or between communities is a typical first aspect 
 
 ## ISO:11074
 
-[Used by ISLANDR](https://www.iso.org/obp/ui#iso:std:iso:11074:ed-2:v1:en:term:2.1.1)
+iso11074 is a standard to describe soil quality in the soil polution domain, the standard itself is behind a paywall, but iso provides a public [viewer on the definition used](https://www.iso.org/obp/ui#iso:std:iso:11074:ed-2:v1:en:term:2.1.1). This initiative has been adopted by teh ISLANDR project
+
+## Soil quality
+
+The continued work from Beichen to create a [knowledge graph on soil quality aspects](https://github.com/soilwise-he/soil-health-knowledge-graph), based on [EEA soil health report](https://op.europa.eu/en/publication-detail/-/publication/1687a21d-9df1-11ed-b508-01aa75ed71a1) and linking to remote thesauri, such as agrovoc
+
+## Glosis web ontology
+
+[Glosis web ontolgy](https://glosis-ld.github.io/glosis/) is a community initiative based on work from FAO and Sieusoil project. The set of soil vocabularies around iso28258 and FAO guidelines for soil description is continuously updated to reflect the the latest in soil classification and description.
