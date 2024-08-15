@@ -45,4 +45,4 @@ The continued work from Beichen to create a [knowledge graph on soil quality asp
 
 ## Glosis web ontology
 
-[Glosis web ontolgy](https://glosis-ld.github.io/glosis/) is a community initiative based on work from FAO and Sieusoil project. The set of soil vocabularies around iso28258 and FAO guidelines for soil description is continuously updated to reflect the the latest in soil classification and description.
+[Glosis web ontolgy](https://glosis-ld.github.io/glosis/) is a community initiative based on work from FAO and Sieusoil project. The set of soil vocabularies around [iso28258](https://www.iso.org/obp/ui#iso:std:iso:28258:ed-1:v1:en) and [FAO guidelines for soil description](https://github.com/iuss-wrb/wrb) is continuously updated to reflect the the latest in soil classification and description.
