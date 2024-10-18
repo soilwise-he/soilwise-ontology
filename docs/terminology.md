@@ -35,9 +35,9 @@ Harmonising terminology within or between communities is a typical first aspect 
 
 [A recent effort of Cenk](https://github.com/user-attachments/files/16440514/SWdata_catalogue_filtering_Cenk.docx)
 
-## ISO
+## ISO11074
 
-The International Standards Organisation has prepared a large number of standards related to [exchange of soil data](https://www.iso.org/obp/ui#iso:std:iso:28258:ed-1:v1:en), [recording soil and site information](https://www.iso.org/obp/ui#iso:std:iso:15903:ed-1:v1:en), [Field soil description](https://www.iso.org/obp/ui#iso:std:iso:25177:ed-2:v1:en), [soil contamination](https://www.iso.org/obp/ui#iso:std:iso:21365:ed-1:v1:en). These standards each reference the iso11074 standard for relevant definitions. These definitions are publicly available via the iso public OBP veiwer [Soil vocabulairy standard (iso11074)](https://www.iso.org/obp/ui#iso:std:iso:11074:ed-2:v1:en:term:2.1.1) 
+The International Standards Organisation has prepared a large number of standards related to [exchange of soil data](https://www.iso.org/obp/ui#iso:std:iso:28258:ed-1:v1:en), [recording soil and site information](https://www.iso.org/obp/ui#iso:std:iso:15903:ed-1:v1:en), [Field soil description](https://www.iso.org/obp/ui#iso:std:iso:25177:ed-2:v1:en), [soil contamination](https://www.iso.org/obp/ui#iso:std:iso:21365:ed-1:v1:en). These standards each reference the iso11074 standard for relevant definitions. These definitions are publicly available via the iso public OBP veiwer [Soil vocabulairy standard (iso11074)](https://www.iso.org/obp/ui#iso:std:iso:11074:ed-2:v1:en:term:2.1.1) ISLANDR project had an initiave to host a [RDF/SKOS version](https://data.geoscience.earth/ncl/ISO11074) of this list
 
 In the ISLANDR project there is a work ongoing to use iso11074 as a starting point for their vocabularies. 
 
