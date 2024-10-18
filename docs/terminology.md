@@ -11,12 +11,29 @@ authors:
   - Giovanni l'Abate
 ---
 
-## Terminology
+# Terminology
 
-Harmonising terminology within or between communities is a typical first aspect in cooperation. The SKOS vocabulairy is a common mechanism to advertise (and link between) terminologies.  
+Harmonising terminology within or between communities is an important aspect in cooperation. The SKOS ontology is a common mechanism to advertise (and link between) terminologies.  
+
+For the soil domain we should distinghuish various types of entities for which definitions can be listed. 
+
+- General glossary on soil related terms, what is soil, soil health, soil quality
+- Soil **properties** / Soil health indicators to be monitored
+- **Results**, in those cases that a result is a reference to a classification (low, medium, high) a proper definition of the class needs to be defined
+- **Observation Procedures** describe how an observation has been performed
+- The potential occurence of a soil **thread** can be determined by combining a number of indicators
+- **Remediation procedures** describe how soil threads can be reduced
+- Ability to perform Soil **functions** is estimated by the quality indicators
+- Feature Of Interest **types**, an (set of) observation should be representative for a FOI, eg a horizon, profile, plot, site, body
+
+
+
+# Inventarisation of existing onotologies
 
 ## Agrovoc
-- [Landing page](https://www.fao.org/agrovoc/)
+
+[AGROVOC](https://www.fao.org/agrovoc/) is a Linked Open Dataset about agriculture, available for public use and facilitates access and visibility of data across domains and languages. It offers a structured collection of agricultural concepts, terms, definitions and relationships which are used to unambiguously identify resources, allowing standardized indexing processes and making searches more efficient.
+
 - [Browser](https://agrovoc.fao.org/browse/agrovoc/en/) (SKOSMOS)
 - [HTML pages](https://aims.fao.org/aos/agrovoc.html) (Loddy)
 - [SPARQL end-point](https://agrovoc.fao.org/sparql)

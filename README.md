@@ -1,13 +1,12 @@
-# soilwise-ontology
+# SoilMission Ontology
 
-The soilwise ontology extends into 3 areas:
+The soilmission ontology extends into 3 areas:
 
 - Metadata about data and knowledge resources, people and organisations
 - Terminology (glossaries and code lists) for use in the soil domain
 - Data models to capture observations, measurements and samples and derived data
 
 ## Metadata about data and knowledge resources, people and organisations
-
 
 Soilwise-he aims to capture on both data and knowledge resources:
 
@@ -16,41 +15,7 @@ Soilwise-he aims to capture on both data and knowledge resources:
 - in which catalogue(s) it is described
 - any observations (validation, usage, user feedback) on the resource during its lifetime
 
-A repository of existing initiatives is being prepared at [docs/metadata](./docs/metadata.md)
-
-### Data model of the metadata knowledge graph
-
-``` mermaid
-flowchart LR
-    ppl[individual] -->|memberOf| o[organisation]
-    ppl -->|authorOf| d
-    o -->|partnerAs| r
-    p -->|partOf| g[grant]
-    p[project] -->|produce| d[data & knowledge resource]
-    obs[observation] -->|on| d
-    o -->|publish| d
-    d -->|describedIn| c[catalogue]
-    d -->|link| d
-    r[role] -->|in| p
-    g -->|funding| fs[Fundingscheme]
-```
-
-### Dublin Core
-
-
-### DCAT
-
-Datasets (as part of catalogues) is commonly described using the [DCAT ontology](https://www.w3.org/TR/vocab-dcat-2/).
-
-![DCAT datamodel](https://www.w3.org/TR/vocab-dcat-2/images/DCAT-summary-all-attributes.png)
-
-DCAT includes aspects of the dublin core, skos, vcard (to describe an individual) and foaf (to contact a person) ontologies.
-
-### Cordis / OpenAire 
-
-[cordis](https://cordis.europa.eu/) is a catalogue of Horizon Europe funded research projects.
-
-![Cordis data model](https://blog.sparna.fr/wp-content/uploads/2024/01/EURIO_v2.4-1024x812.png)
+A repository of practices is being prepared at [docs/metadata](./docs/metadata.md)
 
 ## Terminology (glossaries and code lists) for use in the soil domain
 
