@@ -4,14 +4,16 @@ date: 2024-06-27
 authors:
   - Paul van Genuchten
   - Luis de Sousa
+  - Mickael Beaufils
+  - Beichen Wang
+  - Kathy Schleidt
+  - Fenny van Egmond
+  - Giovanni l'Abate
 ---
 
 ## Terminology
 
 Harmonising terminology within or between communities is a typical first aspect in cooperation. The SKOS vocabulairy is a common mechanism to advertise (and link between) terminologies.  
-
-## DBPedia
-
 
 ## Agrovoc
 - [Landing page](https://www.fao.org/agrovoc/)
@@ -19,9 +21,9 @@ Harmonising terminology within or between communities is a typical first aspect 
 - [HTML pages](https://aims.fao.org/aos/agrovoc.html) (Loddy)
 - [SPARQL end-point](https://agrovoc.fao.org/sparql)
 
-## INSPIRE
+## INSPIRE registry
 
-[INSPIRE registry](https://inspire.ec.europa.eu/registry)
+The INSPIRE infrastructure involves a number of items, which require clear descriptions and the possibility to be referenced through unique identifiers. Examples for such items include INSPIRE themes, code lists, application schemas or discovery services. Registers provide a means to assign identifiers to items and their labels, definitions and descriptions (in different languages). The [INSPIRE registry](https://inspire.ec.europa.eu/registry) provides a central access point to a number of centrally managed INSPIRE registers. The content of these registers are based on the INSPIRE Directive, Implementing Rules and Technical Guidelines.
 
 ## IATE
 
@@ -38,3 +40,11 @@ The International Standards Organisation has prepared a large number of standard
 ## Glosis web ontology
 
 [Glosis web ontolgy](https://glosis-ld.github.io/glosis/) is a community initiative based on work from FAO and Sieusoil project. The set of soil vocabularies around [FAO guidelines for soil description](https://github.com/iuss-wrb/wrb) is continuously updated to reflect the the latest in soil classification and description.
+
+## ANSIS
+
+The Australian National Soil Information System provides a [complete vocabulary](https://ansis.net/standards/australian-soil-and-land-survey-field-handbook/) service on various aspects of the soil domain.
+
+## WRB
+
+Despite limited online presence various editions of the [World Reference Base](https://github.com/iuss-wrb/wrb) describe a classification system for soils, maintained by the WRB working group of IUSS.
