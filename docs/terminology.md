@@ -65,3 +65,12 @@ The Australian National Soil Information System provides a [complete vocabulary]
 ## WRB
 
 Despite limited online presence various editions of the [World Reference Base](https://github.com/iuss-wrb/wrb) describe a classification system for soils, maintained by the WRB working group of IUSS.
+Recent versions include a Fieldguide including a reange of classifications for soil properties (including lab procedures)
+
+## Glosolan
+
+[Standard Operating Procedures of the Global Soil Partnership](https://www.fao.org/global-soil-partnership/glosolan-old/soil-analysis/standard-operating-procedures/en/) are described in pdf's, not available in SKOS (yet) 
+
+## NALT
+
+[National Agricultural thesaurus](https://lod.nal.usda.gov/nalt/en/) is an initiative of USDA, it is widely used due to its completeness and acurateness
