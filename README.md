@@ -27,3 +27,10 @@ Another activity is related to publication of these vocabularies in an easy to u
 ## Data models to capture observations, measurements and samples and derived data 
 
 Various models are in use to capture soil field and laboratory data. Mechanisms are envisioned to capture data in an effective way and share it within the project, in such a way so it easy to use and combine by others, following the FAIR principles. A repository of existing initiatives is being prepared at [docs/soil-observations](./docs/soil-observations.md)
+
+## Related Repos
+Matching of various Ontology terms is being done under metadata augmentation, see the [matching table](https://github.com/soilwise-he/metadata-augmentation/blob/main/keyword-matcher/result/terms.csv).
+
+Work has been done under SoilWise on a [Soil Health Knowledge Graph](https://soilwise-he.github.io/soil-health/).
+
+
