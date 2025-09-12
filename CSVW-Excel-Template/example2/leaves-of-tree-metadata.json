@@ -1,0 +1,57 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "tables": [
+    {
+      "url": "https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/trees.csv",
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "treeid",
+            "titles": "TREEID",
+            "datatype": "number"
+          },
+          {
+            "name": "lat",
+            "titles": "LAT2",
+            "datatype": "number"
+          },
+          {
+            "name": "long",
+            "titles": "Longitude",
+            "datatype": "number"
+          }
+        ],
+        "primaryKey": "treeid"
+      },
+      "aboutUrl": "https://soilwise.example.org/tree/{treeid}"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/leaves.csv",
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "leafid",
+            "titles": ["LEAFID"],
+            "datatype": "number"
+          },
+          {
+            "name": "treeid",
+            "titles": "TREEID",
+            "aboutUrl": "https://soilwise.example.org/tree/{treeid}"
+          },
+          {
+            "name": "size",
+            "titles": "SIZE",
+            "datatype": "number"
+          },
+          {
+            "name": "color",
+            "titles": "COLOR",
+            "datatype": "string"
+          }
+        ]
+      },
+      "aboutUrl": "https://soilwise.example.org/leaf/{leafid}"
+    }
+  ]
+}
