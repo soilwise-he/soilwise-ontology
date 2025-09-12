@@ -8,13 +8,13 @@ import argparse
 from csvwlib import CSVWConverter
 import rdflib
 
-def convert_to_jsonld(csv_path=None, metadata_path=None, mode="standard"):
+def convert(csv_path=None, metadata_path=None, mode="standard", format="json-ld"):
     # Run csvwlib conversion
     graph = CSVWConverter.to_rdf(csv_path, metadata_path, mode=mode)
     # Ensure result is an rdflib.Graph
     if not isinstance(graph, rdflib.Graph):
         raise RuntimeError("csvwlib did not return an rdflib.Graph")
-    return graph.serialize(format="json-ld", indent=2)
+    return graph.serialize(format=format)
 
 def main():
     parser = argparse.ArgumentParser(description="Convert CSV + metadata to JSON-LD with csvwlib")
@@ -23,16 +23,17 @@ def main():
     parser.add_argument("--out", "-o", help="Output JSON-LD file (default: print to stdout)")
     parser.add_argument("--mode", default="minimal", choices=["standard", "minimal"],
                         help="CSVW conversion mode")
+    parser.add_argument("--format", "-f", default="json-ld", help="A rdf format to serialize", choices=["json-ld","xml","n3","nt","ttl","trig","nquads"])
     args = parser.parse_args()
 
-    jsonld = convert_to_jsonld(args.csv, args.meta, mode=args.mode)
+    myrdf = convert(args.csv, args.meta, mode=args.mode, format=args.format)
 
     if args.out:
         with open(args.out, "w", encoding="utf-8") as f:
-            f.write(jsonld)
-        print(f"✔ Wrote JSON-LD to {args.out}")
+            f.write(myrdf)
+        print(f"✔ Wrote rdf to {args.out}")
     else:
-        print(jsonld)
+        print(myrdf)
 
 
 if __name__ == "__main__":

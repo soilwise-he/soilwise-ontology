@@ -23,6 +23,12 @@
             "propertyUrl": "schema:longitude",
             "titles": "Longitude",
             "datatype": "number"
+          },
+          {
+            "virtual": true,
+            "titles": "type",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "http://purl.obolibrary.org/obo/PO_0009006"
           }
         ]
       }
@@ -56,6 +62,12 @@
             "titles": "Color",
             "propertyUrl": "schema:color",
             "datatype": "string"
+          },
+          {
+            "virtual": true,
+            "titles": "type",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "http://purl.obolibrary.org/obo/PO_0025034"
           }
         ]
       }

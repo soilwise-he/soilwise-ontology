@@ -1,70 +1,30 @@
 [
   {
-    "@id": "https://soilwise.example.org/leaf/4",
+    "@id": "https://soilwise.example.org/tree/2",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PO_0009006"
+    ],
     "http://purl.org/dc/terms/identifier": [
       {
-        "@value": "4"
-      }
-    ],
-    "http://purl.org/dc/terms/isPartOf": [
-      {
-        "@id": "https://soilwise.example.org/tree/1"
-      }
-    ],
-    "http://schema.org/color": [
-      {
-        "@value": "ORANGE"
-      }
-    ],
-    "http://schema.org/size": [
-      {
-        "@value": 43.0
-      }
-    ]
-  },
-  {
-    "@id": "https://soilwise.example.org/tree/1",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "1"
+        "@value": "2"
       }
     ],
     "http://schema.org/latitude": [
       {
-        "@value": 20.0
+        "@value": 40.0
       }
     ],
     "http://schema.org/longitude": [
       {
-        "@value": 10.0
-      }
-    ]
-  },
-  {
-    "@id": "https://soilwise.example.org/leaf/3",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "3"
-      }
-    ],
-    "http://purl.org/dc/terms/isPartOf": [
-      {
-        "@id": "https://soilwise.example.org/tree/2"
-      }
-    ],
-    "http://schema.org/color": [
-      {
-        "@value": "BROWN"
-      }
-    ],
-    "http://schema.org/size": [
-      {
-        "@value": 22.0
+        "@value": 20.0
       }
     ]
   },
   {
     "@id": "https://soilwise.example.org/leaf/1",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PO_0025034"
+    ],
     "http://purl.org/dc/terms/identifier": [
       {
         "@value": "1"
@@ -87,48 +47,36 @@
     ]
   },
   {
-    "@id": "https://soilwise.example.org/leaf/5",
+    "@id": "https://soilwise.example.org/leaf/4",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PO_0025034"
+    ],
     "http://purl.org/dc/terms/identifier": [
       {
-        "@value": "5"
+        "@value": "4"
       }
     ],
     "http://purl.org/dc/terms/isPartOf": [
       {
-        "@id": "https://soilwise.example.org/tree/2"
+        "@id": "https://soilwise.example.org/tree/1"
       }
     ],
     "http://schema.org/color": [
       {
-        "@value": "GREEN"
+        "@value": "ORANGE"
       }
     ],
     "http://schema.org/size": [
       {
-        "@value": 31.0
-      }
-    ]
-  },
-  {
-    "@id": "https://soilwise.example.org/tree/5",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "5"
-      }
-    ],
-    "http://schema.org/latitude": [
-      {
-        "@value": 10.0
-      }
-    ],
-    "http://schema.org/longitude": [
-      {
-        "@value": 12.0
+        "@value": 43.0
       }
     ]
   },
   {
     "@id": "https://soilwise.example.org/leaf/2",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PO_0025034"
+    ],
     "http://purl.org/dc/terms/identifier": [
       {
         "@value": "2"
@@ -151,20 +99,96 @@
     ]
   },
   {
-    "@id": "https://soilwise.example.org/tree/2",
+    "@id": "https://soilwise.example.org/tree/5",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PO_0009006"
+    ],
     "http://purl.org/dc/terms/identifier": [
       {
-        "@value": "2"
+        "@value": "5"
       }
     ],
     "http://schema.org/latitude": [
       {
-        "@value": 40.0
+        "@value": 10.0
       }
     ],
     "http://schema.org/longitude": [
       {
+        "@value": 12.0
+      }
+    ]
+  },
+  {
+    "@id": "https://soilwise.example.org/tree/1",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PO_0009006"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://schema.org/latitude": [
+      {
         "@value": 20.0
+      }
+    ],
+    "http://schema.org/longitude": [
+      {
+        "@value": 10.0
+      }
+    ]
+  },
+  {
+    "@id": "https://soilwise.example.org/leaf/5",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PO_0025034"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "5"
+      }
+    ],
+    "http://purl.org/dc/terms/isPartOf": [
+      {
+        "@id": "https://soilwise.example.org/tree/2"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "GREEN"
+      }
+    ],
+    "http://schema.org/size": [
+      {
+        "@value": 31.0
+      }
+    ]
+  },
+  {
+    "@id": "https://soilwise.example.org/leaf/3",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PO_0025034"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "3"
+      }
+    ],
+    "http://purl.org/dc/terms/isPartOf": [
+      {
+        "@id": "https://soilwise.example.org/tree/2"
+      }
+    ],
+    "http://schema.org/color": [
+      {
+        "@value": "BROWN"
+      }
+    ],
+    "http://schema.org/size": [
+      {
+        "@value": 22.0
       }
     ]
   }
