@@ -3,55 +3,62 @@
   "tables": [
     {
       "url": "https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/trees.csv",
+      "aboutUrl": "https://soilwise.example.org/tree/{TREEID}",
       "tableSchema": {
         "columns": [
           {
-            "name": "treeid",
-            "titles": "TREEID",
-            "datatype": "number"
+            "titles": "ID",
+            "name": "TREEID",
+            "datatype": "string",
+            "propertyUrl": "dcterms:identifier"
           },
           {
             "name": "lat",
-            "titles": "LAT2",
+            "propertyUrl": "schema:latitude",
+            "titles": "Latitude",
             "datatype": "number"
           },
           {
             "name": "long",
+            "propertyUrl": "schema:longitude",
             "titles": "Longitude",
             "datatype": "number"
           }
-        ],
-        "primaryKey": "treeid"
-      },
-      "aboutUrl": "https://soilwise.example.org/tree/{treeid}"
+        ]
+      }
     },
     {
       "url": "https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/leaves.csv",
       "tableSchema": {
+        "aboutUrl": "https://soilwise.example.org/leaf/{LEAFID}",
         "columns": [
           {
-            "name": "leafid",
-            "titles": ["LEAFID"],
-            "datatype": "number"
+            "titles": "ID",
+            "name": "LEAFID",
+            "propertyUrl": "dcterms:identifier",
+            "datatype": "string"
           },
           {
             "name": "treeid",
-            "titles": "TREEID",
-            "aboutUrl": "https://soilwise.example.org/tree/{treeid}"
+            "titles": "Tree identifier",
+            "datatype": "string",
+            "propertyUrl": "dcterms:isPartOf",
+            "valueUrl": "https://soilwise.example.org/tree/{TREEID}"
           },
           {
-            "name": "size",
-            "titles": "SIZE",
+            "name": "SIZE",
+            "titles": "Size",
+            "propertyUrl": "schema:size",
             "datatype": "number"
           },
           {
-            "name": "color",
-            "titles": "COLOR",
+            "name": "COLOR",
+            "titles": "Color",
+            "propertyUrl": "schema:color",
             "datatype": "string"
           }
         ]
-      },
-      "aboutUrl": "https://soilwise.example.org/leaf/{leafid}"
+      }
     }
   ]
 }

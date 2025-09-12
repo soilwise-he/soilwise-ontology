@@ -21,7 +21,7 @@ def main():
     parser.add_argument("--csv", "-c", help="Path or URL to CSV file (optional if metadata references it)")
     parser.add_argument("--meta", "-m", help="Path or URL to CSVW metadata JSON")
     parser.add_argument("--out", "-o", help="Output JSON-LD file (default: print to stdout)")
-    parser.add_argument("--mode", default="standard", choices=["standard", "minimal"],
+    parser.add_argument("--mode", default="minimal", choices=["standard", "minimal"],
                         help="CSVW conversion mode")
     args = parser.parse_args()
 
