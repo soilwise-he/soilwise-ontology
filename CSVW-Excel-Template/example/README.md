@@ -11,4 +11,23 @@ The startingpoint is a dataset [soveur.csv](./soveur.csv), which has been export
 Idea would be to add a python script which imports the csvw concepts to a knowledge graph using [cattle](https://github.com/CLARIAH/cattle)
 
 
+## Using cow-tool-cli
 
+A python tool to parse the csvw
+
+```
+pip install cow-csvw
+cow_tool_cli --dataset soveur --base http://github.io/soil-health# --format turtle convert ./soveur.csv
+```
+
+## Use [csvwlib](https://pypi.org/project/csvwlib/) to generate json-ld
+
+Mind that the csvwlib only runs on uri's, so use the full (github) url to the csv or run a local webserver (node: `npx httpserver`).
+
+```
+pip install -r requirements.txt
+
+python csvw2rdf.py --csv http://localhost:8080/soveur.csv --meta http://localhost:8080/soveur.csv-metadata.json --out data.jsonld
+```
+
+I had quite unexpected results with this approach, metadata is ignored
