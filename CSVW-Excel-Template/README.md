@@ -15,3 +15,33 @@ How To:
 - Place the metadata file in the same folder (or zip file) of your the datafile 
 
 **The tool is beta, syntax has not been validated to the CSV-W standard yet**
+
+# A command line tool to work with csvwlib
+
+[csvwlib](https://pypi.org/project/csvwlib/) is a python library to work with csvw concepts. this script enables to work with csvwlib from the commandline.
+
+Install (use a virtual environment):
+```bash
+pip install -r requirements.txt
+python csvw2rdf.py --help
+```
+
+Serialize:
+```bash
+python csvw2rdf.py --meta https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/leaves-of-tree-metadata.json --out data.jsonld
+```
+
+Or in rdf/xml:
+```bash
+python csvw2rdf.py --meta https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/leaves-of-tree-metadata.json --out data.xml --format xml
+```
+
+csvwlib operates on csv and metadata files on the web, you can run a webserver locally to use local files (with node: `npx httpserver`).
+
+## Read more 
+
+- https://w3c.github.io/csvw/syntax
+- https://www.w3.org/TR/tabular-data-primer/
+- https://gss-cogs.github.io/csvw-example
+- https://www.stevenfirth.com/csv-on-the-web-working-with-units-of-measure/
+- https://greggkellogg.net/2015/04/implementing-csv-on-the-web/

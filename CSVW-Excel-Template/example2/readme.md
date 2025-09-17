@@ -34,3 +34,4 @@ csvwlib operates on csv and metadata files on the web, you can run a webserver l
 - https://www.w3.org/TR/tabular-data-primer/
 - https://gss-cogs.github.io/csvw-example
 - https://www.stevenfirth.com/csv-on-the-web-working-with-units-of-measure/
+- https://greggkellogg.net/2015/04/implementing-csv-on-the-web/

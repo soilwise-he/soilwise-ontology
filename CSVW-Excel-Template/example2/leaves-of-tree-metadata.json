@@ -1,5 +1,8 @@
 {
-  "@context": "http://www.w3.org/ns/csvw",
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#"}
+  ],
   "tables": [
     {
       "url": "https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/trees.csv",
@@ -21,6 +24,9 @@
           {
             "name": "long",
             "propertyUrl": "schema:longitude",
+            "sdmx-attribute:unitMeasure": {
+              "@id": "<http://qudt.org/vocab/unit/KiloM>"
+            },
             "titles": "Longitude",
             "datatype": "number"
           },
@@ -54,12 +60,14 @@
           {
             "name": "SIZE",
             "titles": "Size",
+            "dct:description": "Our largest size",
             "propertyUrl": "schema:size",
             "datatype": "number"
           },
           {
             "name": "COLOR",
             "titles": "Color",
+            "dct:description": "my favourite color",
             "propertyUrl": "schema:color",
             "datatype": "string"
           },

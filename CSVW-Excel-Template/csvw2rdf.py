@@ -23,7 +23,8 @@ def main():
     parser.add_argument("--out", "-o", help="Output JSON-LD file (default: print to stdout)")
     parser.add_argument("--mode", default="minimal", choices=["standard", "minimal"],
                         help="CSVW conversion mode")
-    parser.add_argument("--format", "-f", default="json-ld", help="A rdf format to serialize", choices=["json-ld","xml","n3","nt","ttl","trig","nquads"])
+    parser.add_argument("--format", "-f", default="json-ld", help="A rdf format to serialize", 
+                        choices=["json-ld","xml","n3","nt","ttl","trig","nquads"])
     args = parser.parse_args()
 
     myrdf = convert(args.csv, args.meta, mode=args.mode, format=args.format)
