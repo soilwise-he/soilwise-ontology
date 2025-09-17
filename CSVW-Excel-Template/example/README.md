@@ -17,8 +17,10 @@ A python tool to parse the csvw
 
 ```
 pip install cow-csvw
-cow_tool_cli --dataset soveur --base http://github.io/soil-health# --format turtle convert ./soveur.csv
+cow_tool_cli --dataset soveur --base http://github.io/soil-health# --format nquads convert ./soveur.csv
 ```
+
+(only nquads work, see https://github.com/CLARIAH/COW/issues/153)
 
 ## Use [csvwlib](https://pypi.org/project/csvwlib/) to generate json-ld
 

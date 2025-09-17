@@ -12,26 +12,4 @@ The isPartOf relationship is minted with a similar pattern approach.
 - The virtual column doesn't need a titles element from the spec, however the csvwlib tool requires it (but doesn't use it)
 
 
-## csv2rdf (python)
 
-Serialize the graph to rdf with the [csvwlib](https://pypi.org/project/csvwlib/) utility:
-
-```bash
-pip install -r requirements.txt
-python csvw2rdf.py --meta https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/leaves-of-tree-metadata.json --out data.jsonld
-```
-
-Or in rdf/xml:
-```bash
-python csvw2rdf.py --meta https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/leaves-of-tree-metadata.json --out data.xml --format xml
-```
-
-csvwlib operates on csv and metadata files on the web, you can run a webserver locally to use local files (with node: `npx httpserver`).
-
-## Read more 
-
-- https://w3c.github.io/csvw/syntax
-- https://www.w3.org/TR/tabular-data-primer/
-- https://gss-cogs.github.io/csvw-example
-- https://www.stevenfirth.com/csv-on-the-web-working-with-units-of-measure/
-- https://greggkellogg.net/2015/04/implementing-csv-on-the-web/

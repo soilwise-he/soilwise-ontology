@@ -7,6 +7,7 @@
    "@base": "https://soilwise-he.github.io/soil-health#"
   },
   {
+   "sh": "https://soilwise-he.github.io/soil-health#",
    "csvw": "http://www.w3.org/ns/csvw#",
    "dc": "http://purl.org/dc/terms/",
    "dc11": "http://purl.org/dc/elements/1.1/",
@@ -24,20 +25,13 @@
    "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
  ],
- "url": "http://localhost:8080/soveur.csv",
+ "url": "./soveur.csv",
  "dialect": {
   "delimiter": ",",
   "encoding": "UTF-8-SIG",
   "quoteChar": "\""
  },
  "dc:title": "soveur.csv",
- "dcat:keyword": [],
- "dc:publisher": {
-  "schema:name": "ISRIC",
-  "schema:url": {
-   "@id": "http://isric.org"
-  }
- },
  "dc:license": {
   "@id": "http://opendefinition.org/licenses/cc-by/"
  },
@@ -46,21 +40,19 @@
   "@type": "xsd:date"
  },
  "tableSchema": {
-  "url": "http://localhost:8080/soveur.csv",
   "columns": [
    {
-    "@id": "https://soilwise-he.github.io/soilhealth#\ufeffPRID",
-    "name": "\ufeffPRID",
+    "@id": "https://soilwise-he.github.io/soilhealth#PRID",
+    "name": "PRID",
     "titles": [
-     "\ufeffPRID"
+     "PRID"
     ],
-    "dc:description": "\ufeffPRID",
+    "dc:description": "PRID",
     "datatype": "string"
    },
    {
     "@id": "https://soilwise-he.github.io/soilhealth#HONU",
     "propertyUrl": "https://soilwise-he.github.io/soil-health#SoilHorizons",
-    "unit": "foofoo",
     "name": "HONU",
     "titles": "HONU",
     "dc:description": "HONU",
@@ -69,22 +61,22 @@
    {
     "@id": "https://soilwise-he.github.io/soilhealth#HBUP",
     "name": "HBUP",
+    "sdmx-attribute:unitMeasure": {
+		"@id": "http://qudt.org/vocab/unit/CentiM"
+	},
     "propertyUrl": "https://soilwise-he.github.io/soil-health#HorizonUpper",
     "titles": "Horizon Upper",
-    "<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure>": {
-		"@id": "<http://qudt.org/vocab/unit/CentiM>"
-	},
     "dc:description": "HBUP",
     "datatype": "string"
    },
    {
     "@id": "https://soilwise-he.github.io/soilhealth#HBDE",
     "name": "HBDE",
+    "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure": {
+		"@id": "http://qudt.org/vocab/unit/CentiM"
+	},
     "propertyUrl": "https://soilwise-he.github.io/soil-health#HorizonLower",
     "titles": "Horizon Lower",
-    "<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure>": {
-		"@id": "<http://qudt.org/vocab/unit/CentiM>"
-	},
     "dc:description": "HBDE",
     "datatype": "string"
    },
@@ -370,8 +362,9 @@
    {
     "@id": "https://soilwise-he.github.io/soilhealth#LATI",
     "name": "LATI",
+    "propertyUrl": "schema:latitude",
     "titles": [
-     "LATI"
+     "Latitude"
     ],
     "dc:description": "LATI",
     "datatype": "string"
@@ -379,8 +372,9 @@
    {
     "@id": "https://soilwise-he.github.io/soilhealth#LNGI",
     "name": "LNGI",
+    "propertyUrl": "schema:longitude",
     "titles": [
-     "LNGI"
+     "Longitude"
     ],
     "dc:description": "LNGI",
     "datatype": "string"
@@ -397,14 +391,15 @@
    {
     "@id": "https://soilwise-he.github.io/soilhealth#ELEV",
     "name": "ELEV",
+    "propertyUrl": "schema:elevation",
     "titles": [
-     "ELEV"
+     "Elevation"
     ],
     "dc:description": "ELEV",
     "datatype": "string"
    }
   ],
-  "primaryKey": "\ufeffPRID",
+  "primaryKey": "PRID",
   "aboutUrl": "{_row}"
  }
 }
