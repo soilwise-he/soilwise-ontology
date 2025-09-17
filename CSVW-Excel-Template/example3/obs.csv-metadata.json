@@ -1,0 +1,228 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {"sosa": "http://www.w3.org/ns/sosa/", 
+     "qudt": "http://qudt.org/1.1/schema/qudt#"}
+  ],
+  "tables": [
+    {
+      "url": "obs.csv",
+      "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
+      "tableSchema": {
+        "columns": [
+          {
+            "titles": "SampleId",
+            "name": "SAMPLE",
+            "datatype": "string",
+            "propertyUrl": "dcterms:identifier"
+          },
+           {
+            "name": "N",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV/V", 
+            "propertyUrl": "qudt:numericValue",
+            "titles": "ResultN",
+            "datatype": "number"
+          },
+           {
+            "name": "P",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV/V", 
+            "propertyUrl": "qudt:numericValue",
+            "titles": "ResultP",
+            "datatype": "number"
+          },
+          {
+            "name": "K",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV/V", 
+            "propertyUrl": "qudt:numericValue",
+            "titles": "ResultK",
+            "datatype": "number"
+          },
+
+          {
+            "virtual": true,
+            "titles": "type",
+            "name": "FOF",
+            "propertyUrl": "rdf:type",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
+            "valueUrl": "sosa:FeatureOfInterest"
+          },
+
+          {
+            "virtual": true,
+            "titles": "FOFof",
+            "name": "FOFof",
+            "propertyUrl": "sosa:isFeatureOfInterestOf",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/N"
+          },
+          {
+            "virtual": true,
+            "titles": "FOFof",
+            "name": "FOFof",
+            "propertyUrl": "sosa:isFeatureOfInterestOf",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/P"
+          },
+          {
+            "virtual": true,
+            "titles": "FOFof",
+            "name": "FOFof",
+            "propertyUrl": "sosa:isFeatureOfInterestOf",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/K"
+          },
+
+
+          {
+            "virtual": true,
+            "titles": "type",
+            "name": "Obs",
+            "propertyUrl": "rdf:type",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N",
+            "valueUrl": "sosa:Observation"
+          },
+          {
+            "virtual": true,
+            "titles": "type",
+            "name": "Obs",
+            "propertyUrl": "rdf:type",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P",
+            "valueUrl": "sosa:Observation"
+          },
+          {
+            "virtual": true,
+            "titles": "type",
+            "name": "Obs",
+            "propertyUrl": "rdf:type",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K",
+            "valueUrl": "sosa:Observation"
+          },
+
+
+          {
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "sosa:hasResult",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N"
+          },
+          {
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "sosa:hasResult",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P"
+          },
+          {
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "sosa:hasResult",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K"
+          },
+          {
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "qudt:QuantityValue",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV"
+          },
+          {
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "qudt:QuantityValue",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV"
+          },
+          {
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "qudt:QuantityValue",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV"
+          },
+          
+          {
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "qudt:numericValue",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV/V"
+          },
+{
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "qudt:numericValue",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV/V"
+          },
+          {
+            "virtual": true,
+            "titles": "Result",
+            "name": "Res",
+            "propertyUrl": "qudt:numericValue",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV/V"
+          },
+          {
+            "virtual": true,
+            "titles": "Unit",
+            "propertyUrl": "qudt:unit",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV",
+            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM",
+            "name": "Unit"
+          },
+          {
+            "virtual": true,
+            "titles": "Unit",
+            "propertyUrl": "qudt:unit",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV",
+            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM",
+            "name": "Unit"
+          },
+          {
+            "virtual": true,
+            "titles": "Unit",
+            "propertyUrl": "qudt:unit",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV",
+            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM",
+            "name": "Unit"
+          },
+                     
+          {
+            "virtual": true,
+            "titles": "Procedure",
+            "propertyUrl": "sosa:usedProcedure",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N",
+            "valueUrl": "http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn",
+            "name": "Proc"
+          },
+          {
+            "virtual": true,
+            "titles": "Procedure",
+            "propertyUrl": "sosa:usedProcedure",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P",
+            "valueUrl": "http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn",
+            "name": "Proc"
+          },
+          {
+            "virtual": true,
+            "titles": "Procedure",
+            "propertyUrl": "sosa:usedProcedure",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K",
+            "valueUrl": "http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn",
+            "name": "Proc"
+          }
+        ]
+      }
+    }
+  ]
+}
