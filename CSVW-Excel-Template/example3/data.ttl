@@ -29,121 +29,109 @@
 
 <https://soilwise.example.com/example3/AIZ34/K> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/AIZ34/K/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potext> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/exchangeableBasesProcedure-ExchBases_ph7-nh4oac-fp> .
 
 <https://soilwise.example.com/example3/AIZ34/K/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/AIZ34/K/QV/V> ;
+    qudt:numericValue 7.2e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/AIZ34/K/QV/V> qudt:numericValue 7.2e-01 .
 
 <https://soilwise.example.com/example3/AIZ34/N> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/AIZ34/N/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nittot> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/TotalN_dc> .
 
 <https://soilwise.example.com/example3/AIZ34/N/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/AIZ34/N/QV/V> ;
+    qudt:numericValue 1.5e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/AIZ34/N/QV/V> qudt:numericValue 1.5e-01 .
 
 <https://soilwise.example.com/example3/AIZ34/P> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/AIZ34/P/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phoext> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/PhosphorusRetentionProcedure> .
 
 <https://soilwise.example.com/example3/AIZ34/P/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/AIZ34/P/QV/V> ;
+    qudt:numericValue 1.8e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/AIZ34/P/QV/V> qudt:numericValue 1.8e-01 .
 
 <https://soilwise.example.com/example3/BS385/K> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/BS385/K/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potext> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/exchangeableBasesProcedure-ExchBases_ph7-nh4oac-fp> .
 
 <https://soilwise.example.com/example3/BS385/K/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/BS385/K/QV/V> ;
+    qudt:numericValue 1.4e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/BS385/K/QV/V> qudt:numericValue 1.4e-01 .
 
 <https://soilwise.example.com/example3/BS385/N> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/BS385/N/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nittot> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/TotalN_dc> .
 
 <https://soilwise.example.com/example3/BS385/N/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/BS385/N/QV/V> ;
+    qudt:numericValue 8.2e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/BS385/N/QV/V> qudt:numericValue 8.2e-01 .
 
 <https://soilwise.example.com/example3/BS385/P> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/BS385/P/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phoext> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/PhosphorusRetentionProcedure> .
 
 <https://soilwise.example.com/example3/BS385/P/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/BS385/P/QV/V> ;
+    qudt:numericValue 2.2e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/BS385/P/QV/V> qudt:numericValue 2.2e-01 .
 
 <https://soilwise.example.com/example3/TS325/K> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/TS325/K/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potext> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/exchangeableBasesProcedure-ExchBases_ph7-nh4oac-fp> .
 
 <https://soilwise.example.com/example3/TS325/K/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/TS325/K/QV/V> ;
+    qudt:numericValue 2.4e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/TS325/K/QV/V> qudt:numericValue 2.4e-01 .
 
 <https://soilwise.example.com/example3/TS325/N> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/TS325/N/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nittot> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/TotalN_dc> .
 
 <https://soilwise.example.com/example3/TS325/N/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/TS325/N/QV/V> ;
+    qudt:numericValue 8e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/TS325/N/QV/V> qudt:numericValue 8e-01 .
 
 <https://soilwise.example.com/example3/TS325/P> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/TS325/P/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phoext> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/PhosphorusRetentionProcedure> .
 
 <https://soilwise.example.com/example3/TS325/P/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/TS325/P/QV/V> ;
+    qudt:numericValue 1.2e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/TS325/P/QV/V> qudt:numericValue 1.2e-01 .
 
 <https://soilwise.example.com/example3/UAI234/K> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/UAI234/K/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potext> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/exchangeableBasesProcedure-ExchBases_ph7-nh4oac-fp> .
 
 <https://soilwise.example.com/example3/UAI234/K/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/UAI234/K/QV/V> ;
+    qudt:numericValue 1.2e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/UAI234/K/QV/V> qudt:numericValue 1.2e-01 .
 
 <https://soilwise.example.com/example3/UAI234/N> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/UAI234/N/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nittot> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/TotalN_dc> .
 
 <https://soilwise.example.com/example3/UAI234/N/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/UAI234/N/QV/V> ;
+    qudt:numericValue 5e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/UAI234/N/QV/V> qudt:numericValue 5e-01 .
 
 <https://soilwise.example.com/example3/UAI234/P> a sosa:Observation ;
     sosa:hasResult <https://soilwise.example.com/example3/UAI234/P/QV> ;
-    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/acidityExchangeableProcedure-ExchAcid_ph7-unkn> .
+    sosa:observedProperty <http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phoext> ;
+    sosa:usedProcedure <http://w3id.org/glosis/model/procedure/PhosphorusRetentionProcedure> .
 
 <https://soilwise.example.com/example3/UAI234/P/QV> a qudt:QuantityValue ;
-    qudt:numericValue <https://soilwise.example.com/example3/UAI234/P/QV/V> ;
+    qudt:numericValue 8e-01 ;
     qudt:unit <http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM> .
-
-<https://soilwise.example.com/example3/UAI234/P/QV/V> qudt:numericValue 8e-01 .
 
