@@ -11,7 +11,7 @@
       "tableSchema": {
         "columns": [
           {
-            "titles": "SampleId",
+            "titles": "Id",
             "name": "SAMPLE",
             "datatype": "string",
             "propertyUrl": "dcterms:identifier"
@@ -20,204 +20,180 @@
             "name": "N",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV", 
             "propertyUrl": "qudt:numericValue",
-            "titles": "ResultN",
             "datatype": "number"
           },
            {
             "name": "P",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV", 
             "propertyUrl": "qudt:numericValue",
-            "titles": "ResultP",
             "datatype": "number"
           },
           {
             "name": "K",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV", 
             "propertyUrl": "qudt:numericValue",
-            "titles": "ResultK",
             "datatype": "number"
           },
 
           {
             "virtual": true,
-            "titles": "type",
-            "name": "FOF",
             "propertyUrl": "rdf:type",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
-            "valueUrl": "sosa:FeatureOfInterest"
+            "valueUrl": "http://w3id.org/glosis/model/iso28258/2013/Layer"
           },
 
           {
             "virtual": true,
-            "titles": "FOFof",
-            "name": "FOFof",
-            "propertyUrl": "sosa:isFeatureOfInterestOf",
-            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
-            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/N"
+            "propertyUrl": "sosa:hasFeatureOfInterest",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}"
           },
           {
             "virtual": true,
-            "titles": "FOFof",
-            "name": "FOFof",
-            "propertyUrl": "sosa:isFeatureOfInterestOf",
-            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
-            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/P"
+            "propertyUrl": "sosa:hasFeatureOfInterest",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}"
           },
           {
             "virtual": true,
-            "titles": "FOFof",
-            "name": "FOFof",
-            "propertyUrl": "sosa:isFeatureOfInterestOf",
-            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}",
-            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/K"
+            "propertyUrl": "sosa:hasFeatureOfInterest",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K",
+            "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}"
           },
-
-
           {
             "virtual": true,
-            "titles": "type",
-            "name": "Obs",
             "propertyUrl": "rdf:type",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N",
             "valueUrl": "sosa:Observation"
           },
           {
             "virtual": true,
-            "titles": "type",
-            "name": "Obs",
+            "propertyUrl": "sosa:resultTime",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N",
+            "default": "2025-03-01T00:00:00Z",
+            "datatype": "dateTime"
+          },
+          {
+            "virtual": true,
             "propertyUrl": "rdf:type",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P",
             "valueUrl": "sosa:Observation"
           },
           {
             "virtual": true,
-            "titles": "type",
-            "name": "Obs",
+            "propertyUrl": "sosa:resultTime",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P",
+            "default": "2025-03-01T00:00:00Z",
+            "datatype": "dateTime"
+          },
+          {
+            "virtual": true,
             "propertyUrl": "rdf:type",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K",
             "valueUrl": "sosa:Observation"
           },
-
-
           {
             "virtual": true,
-            "titles": "Result",
-            "name": "Res",
+            "propertyUrl": "sosa:resultTime",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K",
+            "default": "2025-03-01T00:00:00Z",
+            "datatype": "dateTime"
+          },
+          {
+            "virtual": true,
             "propertyUrl": "sosa:hasResult",
             "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N"
           },
           {
             "virtual": true,
-            "titles": "Result",
-            "name": "Res",
             "propertyUrl": "sosa:hasResult",
             "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P"
           },
           {
             "virtual": true,
-            "titles": "Result",
-            "name": "Res",
             "propertyUrl": "sosa:hasResult",
             "valueUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K"
           },
           {
             "virtual": true,
-            "titles": "Result",
-            "name": "Res",
             "propertyUrl": "rdf:type",
-            "valueUrl": "qudt:QuantityValue",
+            "valueUrl": "sosa:Result",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV"
           },
           {
             "virtual": true,
-            "titles": "Result",
-            "name": "Res",
             "propertyUrl": "rdf:type",
-            "valueUrl": "qudt:QuantityValue",
+            "valueUrl": "sosa:Result",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV"
           },
           {
             "virtual": true,
-            "titles": "Result",
-            "name": "Res",
             "propertyUrl": "rdf:type",
-            "valueUrl": "qudt:QuantityValue",
+            "valueUrl": "sosa:Result",
+            "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV"
+          },
+          {
+            "virtual": true,
+            "propertyUrl": "rdf:type",
+            "valueUrl": "sosa:Result",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV"
           },
           {
             "virtual": true,
-            "titles": "Unit",
             "propertyUrl": "qudt:unit",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N/QV",
-            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM",
-            "name": "Unit"
+            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM"
           },
           {
             "virtual": true,
-            "titles": "Unit",
             "propertyUrl": "qudt:unit",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P/QV",
-            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM",
-            "name": "Unit"
+            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM"
           },
           {
             "virtual": true,
-            "titles": "Unit",
             "propertyUrl": "qudt:unit",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K/QV",
-            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM",
-            "name": "Unit"
+            "valueUrl": "http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM"
           },
           {
             "virtual": true,
-            "titles": "ObsProp",
             "propertyUrl": "sosa:observedProperty",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N",
-            "valueUrl": "http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nittot",
-            "name": "ObsProp"
+            "valueUrl": "http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nittot"
           },
           {
             "virtual": true,
-            "titles": "ObsProp",
             "propertyUrl": "sosa:observedProperty",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P",
-            "valueUrl": "http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phoext",
-            "name": "ObsProp"
+            "valueUrl": "http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phoext"
           },
           {
             "virtual": true,
-            "titles": "ObsProp",
             "propertyUrl": "sosa:observedProperty",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K",
-            "valueUrl": "http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potext",
-            "name": "ObsProp"
+            "valueUrl": "http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potext"
           },
           {
             "virtual": true,
-            "titles": "Procedure",
             "propertyUrl": "sosa:usedProcedure",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/N",
-            "valueUrl": "http://w3id.org/glosis/model/procedure/TotalN_dc",
-            "name": "Proc"
+            "valueUrl": "http://w3id.org/glosis/model/procedure/TotalN_dc"
           },
           {
             "virtual": true,
-            "titles": "Procedure",
             "propertyUrl": "sosa:usedProcedure",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/P",
-            "valueUrl": "http://w3id.org/glosis/model/procedure/PhosphorusRetentionProcedure",
-            "name": "Proc"
+            "valueUrl": "http://w3id.org/glosis/model/procedure/PhosphorusRetentionProcedure"
           },
           {
             "virtual": true,
-            "titles": "Procedure",
             "propertyUrl": "sosa:usedProcedure",
             "aboutUrl": "https://soilwise.example.com/example3/{SAMPLE}/K",
-            "valueUrl": "http://w3id.org/glosis/model/procedure/exchangeableBasesProcedure-ExchBases_ph7-nh4oac-fp",
-            "name": "Proc"
+            "valueUrl": "http://w3id.org/glosis/model/procedure/exchangeableBasesProcedure-ExchBases_ph7-nh4oac-fp"
           }
         ]
       }

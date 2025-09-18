@@ -38,6 +38,15 @@ python csvw2rdf.py --meta https://raw.githubusercontent.com/soilwise-he/soilwise
 
 csvwlib operates on csv and metadata files on the web, you can run a webserver locally to use local files (with node: `npx httpserver`).
 
+## Validate SOSA
+
+[pyshacl](https://pypi.org/project/pyshacl/) is a tool to validate a knowledge graph against a set of shacl statements. KWG prepared a [shacl validation for sosa](https://github.com/KnowWhereGraph/KWG-SHACL/blob/main/shacl_sosa.ttl).
+
+```bash
+pip install pyshacl
+pyshacl -s https://github.com/KnowWhereGraph/KWG-SHACL/raw/refs/heads/main/shacl_sosa.ttl -m -i rdfs -a -j -f human data.ttl
+```
+
 ## Read more 
 
 - https://w3c.github.io/csvw/syntax
