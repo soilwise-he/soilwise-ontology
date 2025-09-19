@@ -74,3 +74,11 @@ Recent versions include a Fieldguide including a reange of classifications for s
 ## NALT
 
 [National Agricultural thesaurus](https://lod.nal.usda.gov/nalt/en/) is an initiative of USDA, it is widely used due to its completeness and acurateness
+
+## AGRIS/CARIS
+[AGRIS/CARIS](https://www.fao.org/4/u1808e/U1808E01.htm#TopOfPage): SUBJECT CATEGORIES AND SCOPE DESCRIPTIONS
+
+In this Categorization Scheme, agriculture includes fisheries, forestry, food, nutrition and rural sociology. It comprises the production of plants and animals useful to man and the preparation and distribution of these products for man's use.
+
+**Issue: these terms are not directly referenceable**
+
