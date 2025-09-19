@@ -11,5 +11,8 @@ The isPartOf relationship is minted with a similar pattern approach.
 - To indicate the type described in a row, a convention is to add a virtual column (last) with the rdf:type
 - The virtual column doesn't need a titles element from the spec, however the csvwlib tool requires it (but doesn't use it)
 
-
+KS: added the FK relation between the 2 CSV files, now vailable as [leaves-of-tree-metadata-FK.jsonld](https://github.com/soilwise-he/soilwise-ontology/blob/main/CSVW-Excel-Template/example2/leaves-of-tree-metadata-FK.jsonld). Changes:
+- Added dc:description to the virtual addition detailing the FoI type
+- Added FK link between leaves and trees
+Question - Why did you add sdmx-attribute to the context? Not used 
 
