@@ -43,7 +43,7 @@
                         "propertyUrl": "dcterms:identifier",
                         "datatype": "string"
                     }, {
-                        "name": "treeid",
+                        "name": "TREEID",
                         "titles": "Tree identifier",
                         "datatype": "string",
                         "propertyUrl": "dcterms:isPartOf",
@@ -69,10 +69,10 @@
                     }
                 ],
                 "foreignKeys": [{
-                        "columnReference": "treeid",
+                        "columnReference": "TREEID",
                         "reference": {
                             "resource": "https://raw.githubusercontent.com/soilwise-he/soilwise-ontology/refs/heads/main/CSVW-Excel-Template/example2/trees.csv",
-                            "columnReference": "ID"
+                            "columnReference": "TREEID"
                         }
                     }
                 ]
