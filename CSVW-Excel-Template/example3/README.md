@@ -6,9 +6,20 @@ I had difficulty modelling this in csvw, due to a bug in csvwlib related to valu
 
 Notice that a lot of virtual columns are added, which define relations between the various entities in sosa
 
-python ../example2/csvw2rdf.py --meta http://localhost:8080/obs.csv-metadata.json --out data.jsonld
+**SOSA**
+```
+pip install csvwlib
+csvwlib --meta http://localhost:8080/obs.csv-metadata.json -f ttl --out data.ttl
+```
 
-(run a webserver at localhost (npx httpserver))
+**Schema.org**
+```
+pip install csvwlib
+csvwlib --meta http://localhost:8080/obs.csv-schema-org-metadata.json --out data.jsonld
+```
+Test the json in [schema.org validator](https://validator.schema.org)
+
+Run a webserver at the current folder (npx httpserver) to be able to call the files as url's.
 
 ## also tried csv2rdf, but results are poor
 
