@@ -40,9 +40,11 @@ loc.csv | ID | Identifier | string | | |
 loc.csv | Label | Label | String | | |
 
 
-### pygeometa MCF
+### pygeometa MCF / ISO19115
 
-MCF is a convention of the geopython community. A subset of iso19115 encoded in YAML. Attributes in content info are extended to capture unit and procedure. See [sample](./mcf-sample.yml)
+MCF is a convention of the geopython community. A subset of [iso19115](https://www.iso.org/standard/53798.html) encoded in YAML. 
+Attributes in content info are extended to capture unit and procedure. See [sample](./mcf-sample.yml)
+Related to [iso19110](https://www.iso.org/standard/57303.html)
 
 https://github.com/geopython/pygeometa
 
