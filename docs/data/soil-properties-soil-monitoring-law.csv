@@ -21,7 +21,7 @@ Part C,Topsoil compaction,Bulk density in topsoil (A-horizon) (g cm-3),Mandatory
 Part C,Topsoil compaction,Saturated hydraulic conductivity (cm per day),Optional [10]
 Part C,Topsoil compaction,Air capacity (%),Optional [10]
 Part C,Loss of soil biodiversity,DNA metabarcoding for fungi and bacteria,Mandatory (No criteria set at Union level) [11]
-Part C,Loss of soil biodiversity,Metabarcoding of archaea, protists and animals,Optional [11]
+Part C,Loss of soil biodiversity,Metabarcoding of archaea protists and animals,Optional [11]
 Part C,Loss of soil biodiversity,Phospholipid fatty acid analysis (PLFA),Optional [11]
 Part C,Loss of soil biodiversity,Abundance and diversity of nematodes,Optional [11]
 Part C,Loss of soil biodiversity,Abundance and diversity of earthworms,Optional [11]
