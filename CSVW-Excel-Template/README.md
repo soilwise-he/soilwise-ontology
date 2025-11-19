@@ -3,6 +3,8 @@
 [CSV on the web](https://www.w3.org/TR/tabular-data-primer/) is an initiative of W3C to annotate CSV with proper metadata so the CSV 
 data can be effectively re-used. This repository contains some libraries and examples on how to use the CSVW conventions for soil observation data.
 
+Researchers are encouraged to enrich their publications in Zenodo/Dataverse/Datadryad with CSVW metadata, to facilitate interoperability.
+
 ## An Excel template to compile CSVW metadata
 
 A template to annotate the columns in your Excel/CSV dataset with metadata
