@@ -44,6 +44,11 @@ python csvw2rdf.py --meta https://raw.githubusercontent.com/soilwise-he/soilwise
 
 csvwlib operates on csv and metadata files on the web, you can run a webserver locally to use local files (with node: `npx httpserver`).
 
+## An online tool to annotate tabular soil datasets
+
+[this tool](https://pvgenuchten.github.io/vue-csv-w/) facilitates the annotation of tabular data in a web environment
+
+
 ## Validate SOSA
 
 [pyshacl](https://pypi.org/project/pyshacl/) is a tool to validate a knowledge graph against a set of shacl statements. KWG prepared a [shacl validation for sosa](https://github.com/KnowWhereGraph/KWG-SHACL/blob/main/shacl_sosa.ttl).
