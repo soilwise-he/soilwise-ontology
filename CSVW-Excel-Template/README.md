@@ -1,7 +1,13 @@
-# A template to annotate the columns in your Excel/CSV dataset with metadata
+# a CSVW-approach to annotate tabular soil observation datasets 
 
 [CSV on the web](https://www.w3.org/TR/tabular-data-primer/) is an initiative of W3C to annotate CSV with proper metadata so the CSV 
-data can be effectively re-used. This repository contains an Excel template which can assist you in annotating each column of a CSV 
+data can be effectively re-used. This repository contains some libraries and examples on how to use the CSVW conventions for soil observation data.
+
+## An Excel template to compile CSVW metadata
+
+A template to annotate the columns in your Excel/CSV dataset with metadata
+
+ This repository contains an Excel template which can assist you in annotating each column of a CSV 
 and export the result to a CSVW metadata file. Place the exported file alongside the original CSV while uploading the dataset to a 
 repository such as Zenodo. 
 
