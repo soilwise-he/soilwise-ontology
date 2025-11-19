@@ -8,28 +8,15 @@ The startingpoint is a dataset [soveur.csv](./soveur.csv), which has been export
 
 **The work is not completed**; some iterations are needed to complete the metadata in the third tab and optimize the script to provide a valid csvw context.
 
-Idea would be to add a python script which imports the csvw concepts to a knowledge graph using [cattle](https://github.com/CLARIAH/cattle)
-
-
-## Using cow-tool-cli
-
-A python tool to parse the csvw
-
-```
-pip install cow-csvw
-cow_tool_cli --dataset soveur --base http://github.io/soil-health# --format nquads convert ./soveur.csv
-```
-
-(only nquads work, see https://github.com/CLARIAH/COW/issues/153)
-
 ## Use [csvwlib](https://pypi.org/project/csvwlib/) to generate json-ld
+
+CSVWLIB is a library to use the CSV+CSVW to generate rdf
 
 Mind that the csvwlib only runs on uri's, so use the full (github) url to the csv or run a local webserver (node: `npx httpserver`).
 
 ```
 pip install -r requirements.txt
 
-python csvw2rdf.py --csv http://localhost:8080/soveur.csv --meta http://localhost:8080/soveur.csv-metadata.json --out data.jsonld
+python ../csvw2rdf.py --csv http://localhost:8080/soveur.csv --meta http://localhost:8080/soveur.csv-metadata.json --out data.jsonld
 ```
 
-I had quite unexpected results with this approach, metadata is ignored
