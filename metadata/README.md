@@ -10,8 +10,16 @@ authors:
 
 Metadata is important for discovery and usage of a resource. In this repository we aim to understand which are the relevant metadata properties to focus on. And then understand if these properties can either be ingested or derived from the contents or context of the resource. Or if the community needs to be triggered to endorse capture these properties.
 
+## Soilwise Activities
 
-## Data model of the metadata knowledge graph
+- Design, test and document metadata management and publication strategies following FAIR principles
+- A [metadata template](#data-model-of-metadata) to assess records on completeness
+- An [INSPIRE ETS validation](https://github.com/inspire-eu-validation/ets-repository/tree/master/metadata/2.0) engine to validate INSPIRE records
+- A [completeness validation](https://github.com/soilwise-he/metadata-validator) workflow and reporting
+- Various [metadata harmonisation and augmentation](https://github.com/soilwise-he/metadata-augmentation) activities to complement incomplete metadata
+- [Link livelyness assessment](https://github.com/soilwise-he/link-liveliness-assessment), to understand availability of the resource, and extract inherent metadata
+
+## Data model of metadata
 
 The Soilwise repository captures metadata from various data silo's. The metadata is harmonised to a common model. The model is described below.
 
@@ -122,7 +130,7 @@ Used in biodiversity domain (GBIF)
 
 Used in earth observation domain (Copernicus)
 
-<hr>
+---
 
 ## Metadata on projects, organisations and individuals
 
@@ -183,15 +191,13 @@ The [**VIVO** ontology](https://vivo.lyrasis.org/wp-content/uploads/2022/10/vivo
 
 ![Cordis data model](https://blog.sparna.fr/wp-content/uploads/2024/01/EURIO_v2.4-1024x812.png)
 
-
-
 ##  PROJECT
 
 A couple of years ago Simon Cox developed a light-weight ontology for CSIRO precisely called [**PROJECT**](https://dr-shorthair.github.io/project-ont/docs/). Even though it is not a W3C recommendation, it should be considered, there are fewer people more experimented in this field than Simon. This simple ontology could be the hook for alignment between those I refer above and EURIO.
 
 ![Project ontology overview](https://dr-shorthair.github.io/project-ont/images/Project-overview.png "Project ontology overview")
 
-<hr>
+---
 
 ## Use multiple ontologies at once
 

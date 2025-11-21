@@ -69,10 +69,11 @@ In SoilWise we're trying out various aspects of CSV-W:
 
 - A [tool in Excel](./CSVW-Excel-Template/) to annotate an existing sheet
 - A [web based tool](https://lsc-hubs.github.io/tabular-soil-data-annotation/), where you can upload your data and annotate it in a web environment
-- A LLM based variation to the tool above
+- A [LLM based variation to the annotation tool](https://dataannotator-swr.streamlit.app/) 
 - Fix bugs on and extend [CSVWLIB](https://github.com/pvgenuchten/csvwlib/tree/latest) to convert CSV-W to RDF
 - A [validator tool](../RDF/shacl_sosa.ttl) to test if the generated RDF is valid for the SOSA ontology
 - A tool to convert [RDF to RDB](../RDF/rdf2rdb/) (SQLite)
+- [TAPIS](https://www.tapis.grumets.cat), A web tool to visualise and combine sensordata, including CSVW format
 
 ```mermaid
 flowchart LR
