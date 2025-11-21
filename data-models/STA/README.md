@@ -6,5 +6,7 @@ SensorThings API is an implementation of the Observations Measurements and Obser
 
 The SoilWise efforts on this topic focus on:
 
-- How can users [visualize STA data in QGIS software](https://docs.qgis.org/3.40/en/docs/user_manual/working_with_ogc/ogc_client_support.html#sensorthings) (to highlight the benefit of interoperable approaches)
+- How can users [visualize STA data in QGIS software](https://docs.qgis.org/3.40/en/docs/user_manual/working_with_ogc/ogc_client_support.html#sensorthings) (to highlight the benefit of interoperable approaches) (and how can users populate Soil GeoPackage from QGIS)
 - Implement an approach of storing soil observation data in a GeoPackage, using some of the STA conventions 
+
+
