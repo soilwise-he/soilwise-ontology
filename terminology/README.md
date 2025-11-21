@@ -1,16 +1,3 @@
----
-title: 'Terminology'
-date: 2024-06-27
-authors:
-  - Paul van Genuchten
-  - Luis de Sousa
-  - Mickael Beaufils
-  - Beichen Wang
-  - Kathy Schleidt
-  - Fenny van Egmond
-  - Giovanni l'Abate
----
-
 # Terminology
 
 Harmonising terminology within or between communities is an important aspect in cooperation. The SKOS ontology is a common mechanism to advertise (and link between) terminologies.  

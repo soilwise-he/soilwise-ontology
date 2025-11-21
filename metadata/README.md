@@ -1,11 +1,3 @@
----
-title: 'Metadata'
-date: 2024-06-27
-authors:
-  - Paul van Genuchten
-  - Luis de Sousa
----
-
 # Metadata practices within the Soil Mission
 
 Metadata is important for discovery and usage of a resource. In this repository we aim to understand which are the relevant metadata properties to focus on. And then understand if these properties can either be ingested or derived from the contents or context of the resource. Or if the community needs to be triggered to endorse capture these properties.

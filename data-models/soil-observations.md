@@ -1,11 +1,3 @@
----
-title: 'Soil & land observations'
-date: 2024-06-27
-authors:
-  - Paul van Genuchten
-  - Luis de Sousa
----
-
 # Soil & land observations
 
 The observation, measurements & samples model of OGC offers a flexible approach to model soil and land observation data, both from the field as from the lab. The soil biology and genomic commonities play a special role, because they largely adopted standards from their domain.
@@ -53,17 +45,22 @@ The observation, measurements & samples model of OGC offers a flexible approach 
 - [Literature](https://ebooks.publish.csiro.au/content/soil-physical-measurement-and-interpretation-land-evaluation)
 
 
-## iso28258
+## Terminag
+Terminag is a controlled vocabuarly for organizing agricultural research data. It is used in [CAROB](https://carob-data.org/), an agronomy data repository by UCDavis used by CGIAR
+- [Repository](https://github.com/controvoc/terminag/blob/main/variables/variables_soil.csv)
 
+## iso28258
+A standard to exchange data on soil quality
 - [iso28258](https://www.iso.org/standard/44595.html)
 
-## INSPIRe Soil
+## INSPIRE Soil
 
-[INSPIRE Soil](https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/so/dataspecification_so.adoc)
+- [INSPIRE Soil](https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/so/dataspecification_so.adoc)
 
 ## eSOTER
+A former product of ISRIC to store soil observation data in a relational database (MS Access), still used by various institutes. 
+- [eSOTER](https://esoter.net/products/)
 
-[eSOTER](https://esoter.net/products/)
 
 ## Biodiversity
 
